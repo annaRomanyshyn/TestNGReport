@@ -36,7 +36,7 @@
 			<groupId>org.uncommons</groupId>
 			<artifactId>reportng</artifactId>
 			<version>1.1.4</version>
-			
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.google.inject</groupId>
@@ -70,7 +70,7 @@
 						<!-- Setting ReportNG listeners -->
 						<property>
 							<name>listener</name>
-							<value>org.uncommons.reportng.HTMLReporter,com.epam.testgmail.MyListener</value>
+							<value>org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter,com.epam.testgmail.MyListener</value>
 						</property>
 					</properties>
 					<suiteXmlFiles>
